@@ -9,7 +9,7 @@ st.set_page_config(layout='wide')
 
 @st.experimental_memo
 def read_validated():
-    file_name_validated = r"C:\Users\ricar\OneDrive - MRO Holdings\Escritorio\Graphics generator\database_val.csv"
+    file_name_validated = r"database_val.csv"
     validated_df = pd.read_csv(file_name_validated, index_col=0)
     validated_df = validated_df.rename(
         columns={"code": "EMPLOYEE", "specialty": "SPECIALTY", "level": "LEVEL"})
